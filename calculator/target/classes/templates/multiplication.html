@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Minus</title>
+</head>
+<body>
+
+<div align="center">
+  <h2>Multiplication two numbers</h2>
+</div>
+<div align="center">
+  <form  th:action="@{multiplication}" th:object = "${multiplication}" method="post">
+    <div>
+      <label>Num1</label>
+      <input type = "text" id="num1" name="num1" placeholder="input first digit"/>
+      <br>
+      <label>Num2</label>
+      <input type = "text" id= "num2"  name="num2" placeholder="input next digit" />
+      <br>
+    </div>
+    <br>
+    <div>
+      <input type="submit" value="submit">
+    </div>
+  </form>
+  <br>
+  <a href="/">Back</a>
+</div>
+</body>
+
+</html>
